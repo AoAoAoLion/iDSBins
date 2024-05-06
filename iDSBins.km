@@ -1,0 +1,279 @@
+{
+    "root": {
+        "data": {
+            "text": "iDSBins"
+        },
+        "children": [
+            {
+                "data": {
+                    "text": "Final_intergrated.sh"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "text": "help topic"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "text": "get parameters"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "text": "iDSBquality"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "text": "Extract_fastq_withindex.pl"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "text": "bbmap/bbduk.sh"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "text": "remove PhiX sequences"
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "text": "iDSBdetection"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "text": "Determination_Insertion_nonInsertion-july1_v3.pl"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "text": "unassembled files"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "text": "Determination_Insertion_nonInsertion_single_blast_after_merge_v3.pl"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "text": "assembled files"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "text": "blastn"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "text": "assembled files"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "text": "unassembled files"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "text": "fastq2fasta.pl"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "text": "assembled files"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "text": "unassembled files"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "text": "pear"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "text": "merge paired reads"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "text": "assembled files"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "text": "unassembled files"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "text": "combined"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "text": "iDSBdeduplication "
+                },
+                "children": [
+                    {
+                        "data": {
+                            "text": "First round: junction based"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "text": "Identical_ReadCaculation_v3.pl"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "text": "Cut_twoedge_sequences_forunassembled_v2.pl"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "text": "blastn"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "text": "SelfBlast_RemoveDuplication_eachsampleIdentitySorted_v2.pl"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "text": "Second round: referenced based"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "text": "SperatedInsertionbasedAssembly.pl"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "text": "assembled files"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "text": "blastn"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "text": "SelfBlast_RemoveDuplication_eachsampleIdentitySorted_totalinsertion_v2.pl"
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "text": "unassembled files"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "text": "ConcatenateForwardReverseReads.pl"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "text": "blastn"
+                                                        },
+                                                        "children": [
+                                                            {
+                                                                "data": {
+                                                                    "text": "SelfBlast_RemoveDuplication_eachsampleIdentitySorted_Concanatedinsertion_v2.pl"
+                                                                },
+                                                                "children": []
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "data": {
+                                                    "text": "blastn"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "text": "Determine_insertion_number_formutipleinserts_forallassembled_universal_updated_v3.pl"
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "text": "iDSBannotation"
+                },
+                "children": []
+            }
+        ]
+    },
+    "template": "filetree",
+    "theme": "fresh-blue",
+    "version": "1.4.43"
+}

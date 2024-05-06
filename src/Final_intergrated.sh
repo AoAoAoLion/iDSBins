@@ -10,6 +10,7 @@
 ################################################################
 
 
+
 ### Usage function tells users how to run the software
 helpFunction()
 {
